@@ -3,7 +3,7 @@
 
 ## 0. Run Python file
 mandatory
-Write a Shell script that runs a Python script.
+### Write a Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable $PYFILE
 
@@ -224,10 +224,11 @@ mandatory
 * You are not allowed to google anything
 Whiteboard first
 * This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
+
 Write a function in C that checks if a singly linked list has a cycle in it.
 
 * Prototype: int check_cycle(listint_t *list);
-Return: 0 if there is no cycle, 1 if there is a cycle
+* Return: 0 if there is no cycle, 1 if there is a cycle
 Requirements:
 
 ```Only these functions are allowed: write, printf, putchar, puts, malloc, free
@@ -257,7 +258,8 @@ void free_listint(listint_t *head);
 int check_cycle(listint_t *list);
 
 #endif /* LISTS_H */
-carrie@ubuntu:~/0x00$ cat 10-linked_lists.c
+```
+```carrie@ubuntu:~/0x00$ cat 10-linked_lists.c
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
@@ -321,7 +323,8 @@ void free_listint(listint_t *head)
         free(current);
     }
 }
-carrie@ubuntu:~/0x00$ cat 10-main.c
+```
+```carrie@ubuntu:~/0x00$ cat 10-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -375,7 +378,8 @@ int main(void)
 
     return (0);
 }
-carrie@ubuntu:~/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle
+```
+```carrie@ubuntu:~/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle
 carrie@ubuntu:~/0x00$$ ./cycle 
 1024
 402
